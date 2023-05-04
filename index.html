@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Filter Teste</title>
+
+    <style>
+        main{
+            height: 97vh;
+            display: flex;
+            gap: 50px;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .container{
+            display: flex;
+            border: 5px solid black;
+            flex-direction: column;
+            gap: 20px;
+            width: 500px;
+            height: 600px;
+            text-align: center;
+            align-items: center;
+            justify-content: center;
+        }
+
+        #escrever-curso-novo{
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            align-items: center;
+
+        }
+        button{
+            padding: 10px;
+            width: 200px;
+            border: 1px solid black;
+            border-radius: 10px;
+            cursor: pointer;
+        }
+
+        .curso{
+            display: flex;
+            border: 3px solid gray;
+            width: 150px;
+            padding: 10px;
+            text-align: center;
+            text-indent: 10px;
+            border-radius: 10px;
+            justify-content: space-between;
+        }
+
+        .radio-container{
+            width: 50px;
+            text-align: end;
+            padding-right: 10px;
+        }
+
+
+    </style>
+</head>
+<body>
+    <main>
+        <section id="caixa-adicionar-curso" class="container">
+            <div id="escrever-curso-novo">
+                <label for="adicionar-curso">Nome do Curso</label>
+                <input type="text" name="adicionar-curso" id="adicionar-curso">
+                <button id="botao-adicionar-antes">Adicionar Antes</button>
+                <button id="botao-adicionar-depois">Adicionar Depois</button>
+            </div>
+            <div id="caixa-remover-curso">
+                <button id="botao-remover-curso">Remover Selecionado</button>
+            </div>
+            <div id="caixa-curso-selecionado">
+                <button id="botao-curso-selecionado">Curso Selecionado</button>
+            </div>
+        </section>
+
+        <section id="cursos-antigos" class="container"></section>
+    </main>
+
+    <script src="funcionalidade.js"></script>
+</body>
+</html>
